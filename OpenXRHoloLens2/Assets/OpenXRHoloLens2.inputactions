@@ -1,0 +1,170 @@
+{
+    "name": "OpenXRHoloLens2",
+    "maps": [
+        {
+            "name": "HololensActions",
+            "id": "d768c27c-d211-46b0-9d5c-f6438592a6b0",
+            "actions": [
+                {
+                    "name": "Select",
+                    "type": "Button",
+                    "id": "eb60ad91-8918-4f22-a726-f88f4a9b6191",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "SelectLeft",
+                    "type": "Button",
+                    "id": "06928476-ea9b-4534-9961-354d14430895",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "SelectRight",
+                    "type": "Button",
+                    "id": "4cf0ebd6-01ea-4a00-9bce-73525b43f825",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Press",
+                    "type": "Button",
+                    "id": "d8ae967f-e4aa-4f9c-bc2f-c148a689e244",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Hold",
+                    "type": "Button",
+                    "id": "6cb2b1fc-198e-4d50-aba6-2587f359069f",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "f4b51031-0ef7-40d8-aab9-a6f0678c0409",
+                    "path": "<HololensHand>{LeftHand}/selectPressed",
+                    "interactions": "Press(pressPoint=0.5)",
+                    "processors": "",
+                    "groups": "XR",
+                    "action": "Select",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ccb8f624-a3b4-4e26-9499-47429f2f11e3",
+                    "path": "<HololensHand>/squeezePressed",
+                    "interactions": "Press(pressPoint=0.5)",
+                    "processors": "",
+                    "groups": "XR",
+                    "action": "Press",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8dac6814-e2ad-4fce-b5c1-cba3c1add37b",
+                    "path": "<HololensHand>/selectPressed",
+                    "interactions": "Hold(duration=0.4,pressPoint=0.5)",
+                    "processors": "",
+                    "groups": "XR",
+                    "action": "Hold",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b863fcb9-b99b-47f0-9a74-9040ea35272a",
+                    "path": "<HololensHand>{RightHand}/selectPressed",
+                    "interactions": "Press(pressPoint=0.5)",
+                    "processors": "",
+                    "groups": "XR",
+                    "action": "SelectRight",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e1ebefbd-3ea8-4910-8bf1-5e314bc7238b",
+                    "path": "<HololensHand>{LeftHand}/selectPressed",
+                    "interactions": "Press(pressPoint=0.5)",
+                    "processors": "",
+                    "groups": "XR",
+                    "action": "SelectLeft",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "Keyboard&Mouse",
+            "bindingGroup": "Keyboard&Mouse",
+            "devices": [
+                {
+                    "devicePath": "<Keyboard>",
+                    "isOptional": false,
+                    "isOR": false
+                },
+                {
+                    "devicePath": "<Mouse>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        },
+        {
+            "name": "Gamepad",
+            "bindingGroup": "Gamepad",
+            "devices": [
+                {
+                    "devicePath": "<Gamepad>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        },
+        {
+            "name": "Touch",
+            "bindingGroup": "Touch",
+            "devices": [
+                {
+                    "devicePath": "<Touchscreen>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        },
+        {
+            "name": "Joystick",
+            "bindingGroup": "Joystick",
+            "devices": [
+                {
+                    "devicePath": "<Joystick>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        },
+        {
+            "name": "XR",
+            "bindingGroup": "XR",
+            "devices": [
+                {
+                    "devicePath": "<XRController>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}
