@@ -6,7 +6,7 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-namespace ReSeul.OpenXRHoloLens2
+namespace ReSeul.OpenXRSample
 {
     public class ControlHand : MonoBehaviour
     {

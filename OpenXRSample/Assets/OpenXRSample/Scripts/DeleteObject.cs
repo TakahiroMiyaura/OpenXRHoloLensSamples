@@ -4,7 +4,7 @@
 
 using UnityEngine;
 
-namespace ReSeul.OpenXRHoloLens2
+namespace ReSeul.OpenXRSample
 {
     public class DeleteObject : MonoBehaviour
     {

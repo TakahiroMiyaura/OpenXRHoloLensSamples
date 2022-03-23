@@ -5,7 +5,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace ReSeul.OpenXRHoloLens2
+namespace ReSeul.OpenXRSample
 {
     public class BaseCursor : MonoBehaviour
     {
